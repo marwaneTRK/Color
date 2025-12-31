@@ -7,7 +7,6 @@ const HomePage = () => {
     <Layout>
       <div className="h-fit w-full">
         <LeftHomePage />
-        {/* <RightHomePage /> */}
       </div>
     </Layout>
   );

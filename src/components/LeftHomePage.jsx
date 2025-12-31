@@ -19,10 +19,8 @@ const LeftHomePage = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Entrance Animation
       const tl = gsap.timeline();
 
-      // Use fromTo for more predictable behavior in React Strict Mode
       tl.fromTo(
         logoRef.current,
         { opacity: 0, x: -50 },
@@ -64,7 +62,6 @@ const LeftHomePage = () => {
           "-=0.8"
         );
 
-      // Floating Animations
       gsap.to(float1Ref.current, {
         y: -20,
         duration: 2.5,
@@ -98,14 +95,8 @@ const LeftHomePage = () => {
   return (
     <div
       ref={containerRef}
-      // Changed min-h to h-screen to prevent scroll if content fits, and overflow-hidden ensures no scrollbars
-      // Added relative to ensure positioning works
       className="relative h-[calc(100dvh-4rem)] w-full overflow-hidden flex flex-col px-4 md:px-10 lg:px-16 pt-4"
     >
-      {/* 
-        1. PickIt Logo / Watermark 
-        Align top-left on ALL screens (removed justify-center)
-      */}
       <div
         ref={logoRef}
         className="w-full flex justify-start mb-2 md:mb-4 z-20"
@@ -116,10 +107,6 @@ const LeftHomePage = () => {
         />
       </div>
 
-      {/* 
-        2. Main Content 
-        Align left on ALL screens (removed items-center)
-      */}
       <div
         ref={textRef}
         className="grow flex flex-col justify-center md:justify-start items-start z-20"
@@ -143,11 +130,6 @@ const LeftHomePage = () => {
         <DottedFooter />
       </div>
 
-      {/* 
-        3. Floating Images 
-      */}
-
-      {/* Ball: Top Right */}
       <FloatingImage
         ref={float1Ref}
         Component={BallWhite}
@@ -156,7 +138,6 @@ const LeftHomePage = () => {
         md:w-[25vw] lg:w-[20vw] -top-[5%] -right-[10%] md:top-[5%] md:right-[5%] z-10 opacity-90 hidden md:block"
       />
 
-      {/* Palette Strip: Bottom Right */}
       <FloatingImage
         ref={float2Ref}
         Component={HomePicOne}
@@ -166,7 +147,6 @@ const LeftHomePage = () => {
         bottom-[17%] right-[5%] z-10 md:w-[30vw] lg:w-[25vw] md:bottom-[5%] md:right-[2%]"
       />
 
-      {/* Swirls: Bottom Left/Center */}
       <FloatingImage
         ref={float3Ref}
         Component={HomePicTwo}
