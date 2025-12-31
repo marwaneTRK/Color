@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-vm: 400px;
+  --breakpoint-sm: 540px;
+  --breakpoint-ssm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1430px;
+  --breakpoint-3xl: 2000px;
+}
+
+
+@layer utilities {
+  .font-russo {
+    font-family: "Russo One", system-ui, sans-serif;
+  }
+  .word-space-1 {
+    word-spacing: 0.05rem;
+  }
+  .word-space-2 {
+    word-spacing: 0.5rem;
+  }
+  .word-space-3 {
+    word-spacing: 1rem;
+  }
+}
+
+.body{
+  color: #1c1b1b;
+}
