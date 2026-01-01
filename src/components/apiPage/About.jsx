@@ -4,7 +4,7 @@ import ColorPalette from "./ColorPalette";
 const About = () => {
   return (
     <Layout>
-      <main className="flex-1 flex flex-col bg-red-500">
+      <main className="flex-1 flex flex-col ">
         <PaletteControl />
         <ColorPalette />
       </main>
