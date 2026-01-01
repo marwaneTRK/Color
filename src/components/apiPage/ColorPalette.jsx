@@ -1,6 +1,6 @@
 const ColorPalette = () => {
   return (
-    <div>
+    <div className="bg-blue-400">
       <div>tst</div>
       <div>tst</div>
       <div>tst</div>

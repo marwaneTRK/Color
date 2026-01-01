@@ -4,7 +4,7 @@ import whiteBG from "../imgs/background/whiteBG.svg";
 const Layout = ({ children }) => {
   return (
     <div
-      className="min-h-screen bg-no-repeat bg-cover bg-center overflow-x-hidden "
+      className="min-h-screen bg-no-repeat bg-cover bg-center overflow-x-hidden h-screen flex flex-col"
       style={{
         backgroundImage: `url(${whiteBG})`,
       }}
