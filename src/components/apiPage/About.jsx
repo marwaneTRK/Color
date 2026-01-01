@@ -5,7 +5,7 @@ import PaletteControl from "./PaletteControl";
 const About = () => {
   return (
     <Layout>
-      <main className="flex-1 bg-red-500">
+      <main className="flex-1 flex flex-col bg-red-500">
         <PaletteControl />
         <ColorPalette />
       </main>
