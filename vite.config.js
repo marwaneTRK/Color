@@ -9,4 +9,5 @@ export default defineConfig({
     tailwindcss(),
     svgr(),
   ],
+  base: '/Color/',
 })
