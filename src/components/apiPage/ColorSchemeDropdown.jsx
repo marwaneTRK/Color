@@ -21,16 +21,16 @@ export default function ColorSchemeDropdown() {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-8">
+    <div className="w-full max-w-xl mx-auto p-8 ">
       <div className="relative">
         {/* Dropdown Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full px-6 py-4 bg-white border-2 border-gray-300 rounded-lg flex items-center justify-between text-left text-xl hover:border-gray-400 transition-colors"
+          className="w-full px-6 py-2 bg-white border-2 border-[#687385] rounded-2xl flex items-center justify-between text-left text-xl hover:border-gray-400 transition-colors"
         >
           <span className="text-gray-900">{selected}</span>
           <ChevronDown
-            className={`w-6 h-6 text-gray-500 transition-transform ${
+            className={`w-6 h-6  transition-transform ${
               isOpen ? "rotate-180" : ""
             }`}
           />
@@ -38,12 +38,12 @@ export default function ColorSchemeDropdown() {
 
         {/* Dropdown Menu */}
         {isOpen && (
-          <div className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-gray-300 rounded-lg shadow-lg overflow-hidden z-10">
+          <div className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-gray-300 rounded-2xl shadow-lg overflow-hidden z-10">
             {options.map((option) => (
               <button
                 key={option}
                 onClick={() => handleSelect(option)}
-                className="w-full px-6 py-4 text-left text-xl hover:bg-gray-50 transition-colors flex items-center justify-between group"
+                className="w-full px-6 py-4 text-left text-xl hover:bg-gray-300 transition-colors flex items-center justify-between group"
               >
                 <span className="text-gray-900">{option}</span>
                 {selected === option && (

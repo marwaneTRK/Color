@@ -1,7 +1,6 @@
 import Layout from "../Layout";
-import ColorPalette from "./ColorPalette";
 import PaletteControl from "./PaletteControl";
-
+import ColorPalette from "./ColorPalette";
 const About = () => {
   return (
     <Layout>
