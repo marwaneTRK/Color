@@ -28,7 +28,7 @@ const PickSection = () => {
       rounded-4xl px-2 py-1 w-23`}
         style={{ borderColor: color }}
       >
-        <p className="text-center">{color}</p>
+        <p className="text-center">{color.toLocaleUpperCase()}</p>
       </div>
     </div>
   );
