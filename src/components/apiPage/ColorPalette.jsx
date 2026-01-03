@@ -1,28 +1,18 @@
 import CopyIcon from "../../imgs/btn/copyIcon.svg?react";
 
-const ColorPalette = () => {
+const ColorPalette = ({ color }) => {
   return (
     <div className="bg-blue-400 flex-8 flex flex-col">
-      <div className="flex-1 bg-fuchsia-600 flex flex-col justify-center  items-center text-[#000000] ">
-        <CopyIcon />
-        <p className="font-medium text- ">#5A8DFF</p>
-      </div>
-      <div className="flex-1 bg-orange-500 flex flex-col justify-center  items-center text-[#000000]">
-        <CopyIcon />
-        <p className="font-medium text- ">#5A8DFF</p>
-      </div>
-      <div className="flex-1 bg-gray-500 flex flex-col justify-center  items-center text-[#000000]">
-        <CopyIcon />
-        <p className="font-medium text- ">#5A8DFF</p>
-      </div>
-      <div className="flex-1 bg-green-500 flex flex-col justify-center  items-center text-[#000000]">
-        <CopyIcon />
-        <p className="font-medium text- ">#5A8DFF</p>
-      </div>
-      <div className="flex-1 bg-yellow-500 flex flex-col justify-center  items-center text-[#000000]">
-        <CopyIcon />
-        <p className="font-medium text- ">#5A8DFF</p>
-      </div>
+      {color.map((c, index) => (
+        <div
+          key={c.hex.value || index} // clé unique, fallback sur index
+          className="flex-1 flex flex-col justify-center items-center text-[#000000]"
+          style={{ backgroundColor: c.hex.value }}
+        >
+          <CopyIcon />
+          <p className="font-medium">{c.hex.value}</p>
+        </div>
+      ))}
     </div>
   );
 };

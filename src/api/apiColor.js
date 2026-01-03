@@ -5,5 +5,3 @@ async function getColors() {
 }
 getColors()
 
-const test = document.getElementById("test")
-const testT = document.getElementById("test2")

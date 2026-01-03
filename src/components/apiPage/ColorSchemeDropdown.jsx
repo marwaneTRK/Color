@@ -23,7 +23,7 @@ export default function ColorSchemeDropdown() {
   return (
     <div className="w-full max-w-xl mx-auto p-8 ">
       <div className="relative">
-        {/* Dropdown Button */}
+        {/* Dropdown dial Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="w-full px-6 py-2 bg-white border-2 border-[#687385] rounded-2xl flex items-center justify-between text-left text-xl hover:border-gray-400 transition-colors"
@@ -36,7 +36,7 @@ export default function ColorSchemeDropdown() {
           />
         </button>
 
-        {/* Dropdown Menu */}
+        {/* Dropdown dial MEnu*/}
         {isOpen && (
           <div className="absolute top-full left-0 right-0 mt-2 bg-white border-2 border-gray-300 rounded-2xl shadow-lg overflow-hidden z-10">
             {options.map((option) => (
@@ -55,7 +55,7 @@ export default function ColorSchemeDropdown() {
         )}
       </div>
 
-      {/* Click outside to close */}
+      {/* bash tlckliki outside wi tssd */}
       {isOpen && (
         <div className="fixed inset-0 z-0" onClick={() => setIsOpen(false)} />
       )}
