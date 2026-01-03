@@ -1,8 +1,8 @@
 import { createContext, useState, useMemo } from "react";
 
-export const AuthContext = createContext(null);
+export const ColorContext = createContext(null);
 
-export function AuthProvider({ children }) {
+export function ColorProvider({ children }) {
   const [selected, setSelected] = useState("Monochrome");
   const [color, setColor] = useState([]);
   const [userColor, setUserColor] = useState({ color: "F55A5A", mode: "" });
@@ -21,5 +21,7 @@ export function AuthProvider({ children }) {
 
   console.log("context has changed");
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <ColorContext.Provider value={value}>{children}</ColorContext.Provider>
+  );
 }
