@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import CopyIcon from "../../imgs/btn/pickIcon.svg?react";
+import { ColorContext } from "./ApiComponent/ColorContext";
 
 const PickSection = () => {
   const [color, setColor] = useState("#F55A5A");
+  const { userColor, setUserColor } = useContext(ColorContext);
+  const [tempColor, setTempColor] = useState(userColor.color);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setUserColor((prev) => ({ ...prev, color: tempColor }));
+    }, 200); // Wait 300ms after last change
+
+    return () => clearTimeout(timer);
+  }, [tempColor]);
+
   return (
     <div className="pt-4 flex justify-between items-center">
       <div
@@ -14,8 +25,8 @@ const PickSection = () => {
             type="color"
             id="pickColor"
             name="pickColor"
-            value={color}
-            onChange={(e) => setColor(e.target.value)}
+            value={tempColor}
+            onChange={(e) => setTempColor(e.target.value)}
             className="w-10 border-2 border-[#E5E5E5]"
           />
         </div>
@@ -26,9 +37,9 @@ const PickSection = () => {
         className={`
             border-3 ml-4
       rounded-4xl px-2 py-1 w-23`}
-        style={{ borderColor: color }}
+        style={{ borderColor: userColor.color }}
       >
-        <p className="text-center">{color.toLocaleUpperCase()}</p>
+        <p className="text-center">{userColor.color.toLocaleUpperCase()}</p>
       </div>
     </div>
   );

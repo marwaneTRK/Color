@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Check, ChevronDown } from "lucide-react";
+import { ColorContext } from "./ApiComponent/ColorContext";
 
 export default function ColorSchemeDropdown() {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState("Monochrome");
+  const [selected, setSelected] = useState("Analogic");
+  const { setUserColor } = useContext(ColorContext);
 
   const options = [
     "Monochrome",
@@ -18,6 +20,11 @@ export default function ColorSchemeDropdown() {
   const handleSelect = (option) => {
     setSelected(option);
     setIsOpen(false);
+
+    setUserColor((prev) => ({
+      ...prev,
+      mode: option,
+    }));
   };
 
   return (

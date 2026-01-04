@@ -1,7 +1,7 @@
 import ColorSchemeDropdown from "./ColorSchemeDropdown";
 import PickSection from "./PickSection";
 
-const PaletteControl = ({ setColor }) => {
+const PaletteControl = () => {
   return (
     <div className=" flex-2 flex flex-col justify-center items-center">
       <PickSection />
