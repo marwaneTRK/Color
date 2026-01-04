@@ -3,13 +3,12 @@ import CopyIcon from "../../imgs/btn/pickIcon.svg?react";
 import { ColorContext } from "./ApiComponent/ColorContext";
 
 const PickSection = () => {
-  const [color, setColor] = useState("#F55A5A");
   const { userColor, setUserColor } = useContext(ColorContext);
   const [tempColor, setTempColor] = useState(userColor.color);
   useEffect(() => {
     const timer = setTimeout(() => {
       setUserColor((prev) => ({ ...prev, color: tempColor }));
-    }, 200); // Wait 300ms after last change
+    }, 100);
 
     return () => clearTimeout(timer);
   }, [tempColor]);
