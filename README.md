@@ -18,7 +18,8 @@ A modern, intuitive web application for creating and managing beautiful color pa
 - **Copy to Clipboard** - Instantly copy hex codes for quick implementation
 - **Fully Responsive Design** - Seamless experience across desktop, tablet, and mobile devices
 - **Dark Mode Support** - Toggle between light and dark themes for comfortable viewing
-- **Interactive UI** - Smooth animations and engaging user experience
+- **Smooth Animations** - Enhanced user experience with GSAP-powered animations
+- **Interactive UI** - Beautiful icons and engaging interactions
 
 ## 🚀 Quick Start
 
@@ -92,11 +93,15 @@ Color/
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React 18
-- **Build Tool**: Vite
-- **Styling**: CSS3 with modern features
-- **State Management**: React Context API
-- **Deployment**: GitHub Pages
+- **Framework**: React 19 - Modern UI library with latest features
+- **Build Tool**: Vite 7 - Lightning-fast build tool and dev server
+- **Styling**: Tailwind CSS 4 - Utility-first CSS framework
+- **Routing**: React Router DOM 7 - Declarative routing for React
+- **Animations**: GSAP 3 - Professional-grade animation library
+- **Icons**: Lucide React - Beautiful & consistent icon pack
+- **SVG Handling**: SVGR - Transform SVGs into React components
+- **State Management**: React Context API - Built-in state management
+- **Deployment**: GitHub Pages - Fast and reliable hosting
 
 ## 📱 Responsive Design
 
@@ -116,17 +121,23 @@ Contributions are welcome! Here's how you can help:
 
 1. **Fork** the repository
 2. **Create** a feature branch
-   ```bash
+
+```bash
    git checkout -b feature/amazing-feature
-   ```
+```
+
 3. **Commit** your changes
-   ```bash
+
+```bash
    git commit -m 'Add some amazing feature'
-   ```
+```
+
 4. **Push** to the branch
-   ```bash
+
+```bash
    git push origin feature/amazing-feature
-   ```
+```
+
 5. **Open** a Pull Request
 
 Please ensure your code follows the existing style and includes appropriate tests.
@@ -138,6 +149,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Built with [Vite](https://vitejs.dev/) for lightning-fast development
+- Styled with [Tailwind CSS](https://tailwindcss.com/) for rapid UI development
+- Animated with [GSAP](https://greensock.com/gsap/) for smooth, professional animations
 - Inspired by the need for accessible, powerful color tools
 - Thanks to all contributors and the open-source community
 
