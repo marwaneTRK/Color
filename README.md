@@ -13,7 +13,7 @@ A modern, intuitive web application for creating and managing beautiful color pa
 ## ✨ Features
 
 - **Smart Color Palette Generator** - Generate harmonious color palettes with a single click
-- **Flexible Color Schemes** - Support for monochromatic, analogic, complementary, triadic, and custom color schemes
+- **Flexible Color Schemes** - Support for monochromatic, analogic, complementary, triadic, Tetradic, and custom color schemes
 - **Real-time Customization** - Pick and fine-tune individual colors with an intuitive color picker
 - **Copy to Clipboard** - Instantly copy hex codes for quick implementation
 - **Fully Responsive Design** - Seamless experience across desktop, tablet, and mobile devices
@@ -110,7 +110,7 @@ PickIt is fully responsive and works beautifully on all devices - from large des
 ## 🎨 How to Use
 
 1. **Choose a Base Color** - Click "Add Color" or use the color picker to select your starting color
-2. **Select a Color Scheme** - Choose from analogic, monochromatic, complementary, triadic, or other harmony schemes
+2. **Select a Color Scheme** - Choose from analogic, monochromatic, complementary, triadic, Tetradic,or other harmony schemes
 3. **Generate Palette** - Watch as PickIt creates a beautiful, harmonious color palette
 4. **Copy Hex Codes** - Click on any color to copy its hex code to your clipboard
 5. **Customize** - Fine-tune individual colors to match your vision
