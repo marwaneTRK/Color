@@ -15,6 +15,7 @@ export default function ColorSchemeDropdown() {
     "Complement",
     "Analogic-complement",
     "Triad",
+    "quad",
   ];
 
   const handleSelect = (option) => {
