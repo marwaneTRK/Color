@@ -117,7 +117,7 @@ PickIt is fully responsive and works beautifully on all devices - from large des
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Contributions are welcome! Here's how you can help :
 
 1. **Fork** the repository
 2. **Create** a feature branch
