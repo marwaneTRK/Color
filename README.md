@@ -105,7 +105,7 @@ Color/
 
 ## 📱 Responsive Design
 
-PickIt is fully responsive and works beautifully on all devices - from large desktop monitors to mobile phones. The interface adapts seamlessly to provide an optimal user experience regardless of screen size.
+PickIt is fully responsive and works beautifully on all devices - from large desktop monitors to mobile phones. The interface adapts seamlessly to provide an optimal user experience regardless of screen size !
 
 ## 🎨 How to Use
 
